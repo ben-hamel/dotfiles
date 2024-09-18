@@ -32,3 +32,6 @@ then use GNU stow to create symlinks
 ```
 $ stow .
 ```
+
+[Dreams of Autonomy Tutorial](https://www.youtube.com/watch?v=y6XCebnB9gs&t=79s)
+[Fireship tutorial](https://www.youtube.com/watch?v=r_MpUP6aKiQ)
