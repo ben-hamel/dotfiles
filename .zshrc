@@ -24,13 +24,6 @@ if [ -f '/Users/benhamel/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/
 # zsh-autosuggestions
 # source $HOMEBREW_PREFIX/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
-# starship prompt
-# export STARSHIP_CONFIG=~/example/non/default/path/starship.toml
-
-#wezterm (docs say to keep at end? not sure if matters)
-# eval "$(starship init zsh)"export STARSHIP_CONFIG="$HOME/.config/starship/starship.toml"
-
-
 #OH MY POSH
 if [ "$TERM_PROGRAM" != "Apple_Terminal" ]; then
   # eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/zen.toml)"
@@ -40,3 +33,6 @@ if [ "$TERM_PROGRAM" != "Apple_Terminal" ]; then
   # eval "$(oh-my-posh init zsh --config 'https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/bubbles.omp.json')"
   # eval "$(oh-my-posh init zsh --config 'https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/bubblesextra.omp.json')"
 fi
+
+source $HOMEBREW_PREFIX/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source $HOMEBREW_PREFIX/share/zsh-autosuggestions/zsh-autosuggestions.zsh
