@@ -22,9 +22,9 @@ brew install stow
 
 First, check out the dotfiles repo in your $HOME directory using git
 
-```
-$ https://github.com/ben-hamel/dotfiles.git
-$ cd dotfiles
+```bash
+git clone https://github.com/ben-hamel/dotfiles.git
+cd dotfiles
 ```
 
 then use GNU stow to create symlinks
@@ -32,6 +32,3 @@ then use GNU stow to create symlinks
 ```
 $ stow .
 ```
-
-[Dreams of Autonomy Tutorial](https://www.youtube.com/watch?v=y6XCebnB9gs&t=79s)
-[Fireship tutorial](https://www.youtube.com/watch?v=r_MpUP6aKiQ)
