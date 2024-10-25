@@ -1,5 +1,6 @@
 local wezterm = require("wezterm")
 local config = wezterm.config_builder()
+local act = wezterm.action
 
 config.automatically_reload_config = true
 config.default_cursor_style = "BlinkingBar"
