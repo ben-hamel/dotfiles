@@ -1,0 +1,21 @@
+{
+  "autoMemoryEnabled": false,
+  "effortLevel": "high",
+  "enabledPlugins": {},
+  "extraKnownMarketplaces": {},
+  "hooks": {},
+  "permissions": {
+    "allow": [
+      "Bash(bun -e ':*)",
+      "WebFetch(domain:ai-sdk.dev)",
+      "WebFetch(domain:reference.langchain.com)"
+    ]
+  },
+  "preferredNotifChannel": "ghostty",
+  "statusLine": {
+    "command": "bash ~/.claude/statusline-powerline.sh",
+    "type": "command"
+  },
+  "syntaxHighlightingDisabled": false,
+  "theme": "auto"
+}

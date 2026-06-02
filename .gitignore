@@ -1,0 +1,4 @@
+# ignore DS_Store
+*.DS_Store
+zed/.config/zed/prompts/
+zed/.config/zed/conversations/

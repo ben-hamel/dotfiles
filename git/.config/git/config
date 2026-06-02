@@ -1,0 +1,9 @@
+[user]
+	name = Ben Hamel
+	email = 16502126+ben-hamel@users.noreply.github.com
+[init]
+	defaultBranch = main
+[fetch]
+	prune = true
+[core]
+	editor = code --wait
