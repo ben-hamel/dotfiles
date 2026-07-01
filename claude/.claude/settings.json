@@ -3,7 +3,20 @@
   "effortLevel": "high",
   "enabledPlugins": {},
   "extraKnownMarketplaces": {},
-  "hooks": {},
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "command": "bash '/Users/ben/.claude/hooks/herdr-agent-state.sh' session",
+            "timeout": 10,
+            "type": "command"
+          }
+        ],
+        "matcher": "*"
+      }
+    ]
+  },
   "permissions": {
     "allow": [
       "Bash(bun -e ':*)",

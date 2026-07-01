@@ -1,8 +1,26 @@
+theme = Catppuccin Mocha
 # theme = Aura
-theme = Github Dark Default
+# theme = GitHub Dark
+# theme = Github Dark Default
+
+background-opacity = 0.85
+# background-blur = true
+background-blur-radius = 25
+
+window-padding-x = 8
+window-padding-y = 8
+window-padding-balance = true
+
+unfocused-split-opacity = 0.55
+split-divider-color = #524f67
+
+cursor-style = block
+cursor-style-blink = true
+
+copy-on-select = clipboard
 
 # font-family = Hack Nerd Font Mono
-font-family = JetBrainsMono Nerd Font Mono
+font-family = JetBrainsMonoNL Nerd Font
 # font-family = JetBrainsMonoNL Nerd Font Mono
 # font-family = Menlo
 # font-family = Monaco

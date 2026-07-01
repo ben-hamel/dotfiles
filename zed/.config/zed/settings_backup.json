@@ -7,10 +7,7 @@
 // custom settings, run `zed: open default settings` from the
 // command palette
 {
-	"edit_predictions": {
-  "provider": "zed"
- },
- "project_panel": {
+	"project_panel": {
   "dock": "left"
  },
  "outline_panel": {
@@ -18,6 +15,9 @@
  },
  "collaboration_panel": {
   "dock": "left"
+ },
+ "features": {
+  "edit_prediction_provider": "zed"
  },
  "show_edit_predictions": false,
  "auto_update": false,
@@ -63,29 +63,17 @@
   "sort_by_path": true
 	},
 	"agent": {
-		"favorite_models": [
-   {
-    "provider": "openai-subscribed",
-    "model": "gpt-5.5",
-    "enable_thinking": true,
-    "effort": "medium"
-   }
-  ],
-  "tool_permissions": {
-   "default": "allow"
-  },
-  "dock": "right",
+		"dock": "right",
   "inline_assistant_model": {
 			"provider": "google",
 			"model": "gemini-3-flash-preview"
 		},
 		"default_profile": "ask",
-		"play_sound_when_agent_done": "always",
+		"always_allow_tool_actions": true,
+		"play_sound_when_agent_done": true,
 		"default_model": {
-			"effort": "medium",
-   "enable_thinking": true,
-   "provider": "openai-subscribed",
-			"model": "gpt-5.5"
+			"provider": "google",
+			"model": "gemini-2.5-pro"
 		}
 	},
 	"use_system_window_tabs": true,
