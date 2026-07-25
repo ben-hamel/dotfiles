@@ -7,7 +7,12 @@
 // custom settings, run `zed: open default settings` from the
 // command palette
 {
-	"edit_predictions": {
+	"agent_servers": {
+  "codex-acp": {
+   "type": "registry"
+  }
+ },
+ "edit_predictions": {
   "provider": "zed"
  },
  "project_panel": {
@@ -58,7 +63,8 @@
 	"vim_mode": false,
 	"helix_mode": false,
 	"git_panel": {
-		"dock": "left",
+		"group_by": "staging",
+  "dock": "left",
   "tree_view": false,
   "sort_by_path": true
 	},
