@@ -100,6 +100,25 @@ name = "catppuccin"
 # type = "pane"
 # command = "lazygit"
 
+# Open a temporary shell over the current layout. It starts in the focused
+# pane's working directory and closes when the shell exits.
+[[keys.command]]
+key = "prefix+t"
+type = "popup"
+command = "exec \"${SHELL:-sh}\""
+description = "open scratch terminal"
+width = "80%"
+height = "80%"
+
+# Open LazyGit over the current layout and return when LazyGit exits.
+[[keys.command]]
+key = "prefix+alt+g"
+type = "popup"
+command = "lazygit"
+description = "run lazygit"
+width = "80%"
+height = "80%"
+
 # Legacy indexed shortcut config is still parsed for compatibility.
 # Prefer switch_tab, switch_workspace, and focus_agent for new configs.
 # [keys.indexed]
