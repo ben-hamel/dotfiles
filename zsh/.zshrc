@@ -25,6 +25,7 @@ fi
 #TOOLS
 eval "$(~/.local/bin/mise activate zsh)"
 eval "$(zoxide init zsh)"
+eval "$(direnv hook zsh)"
 
 
 #COMPLETIONS
