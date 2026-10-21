@@ -38,3 +38,14 @@ Or to install a specific app's config:
 ```bash
 stow <app>  #exaple: stow ghostty
 ```
+
+## Yazi
+
+The `yazi` package stores the Catppuccin Mocha selection and its locked flavor version. After installing matching `yazi` and `ya` binaries on a new machine, run:
+
+```bash
+stow yazi
+ya pkg install
+```
+
+`ya pkg install` restores the flavor into `~/.config/yazi/flavors/`; that downloaded directory does not need to be tracked.
