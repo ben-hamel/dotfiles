@@ -2,3 +2,7 @@
 *.DS_Store
 zed/.config/zed/prompts/
 zed/.config/zed/conversations/
+
+# Neovim generated spell dictionaries (track the plain-text *.add files)
+nvim/.config/nvim/spell/*.spl
+nvim/.config/nvim/spell/*.sug
