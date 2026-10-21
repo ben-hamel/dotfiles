@@ -41,3 +41,11 @@ source $HOMEBREW_PREFIX/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 . "$HOME/.atuin/bin/env"
 
 eval "$(atuin init zsh)"
+
+# Added by the Hunk installer (https://hunk.dev)
+export PATH='/Users/ben/.hunk/bin':"$PATH"
+# The following lines have been added by Docker Desktop to enable Docker CLI completions.
+fpath=(/Users/ben/.docker/completions $fpath)
+autoload -Uz compinit
+(( ${+_comps[docker]} )) || compinit
+# End of Docker CLI completions
