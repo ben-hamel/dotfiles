@@ -25,7 +25,7 @@ if [ -d ~/.bashrc.d ]; then
 fi
 unset rc
 
-# eval "$(oh-my-posh init bash --config 'https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/tokyonight_storm.omp.json')"
+eval "$(oh-my-posh init bash --config 'https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/tokyonight_storm.omp.json')"
 eval "$(zoxide init bash)"
 
 #https://yazi-rs.github.io/docs/quick-start#shell-wrapper
@@ -39,3 +39,9 @@ function y() {
 }
 
 eval "$(~/.local/bin/mise activate bash)"
+
+# Added by the Hunk installer (https://hunk.dev)
+export PATH='/home/ben/.hunk/bin':"$PATH"
+
+. "$HOME/.atuin/bin/env"
+eval "$(atuin init bash)"
