@@ -136,6 +136,61 @@ command = "lazygit"
 width = "80%"
 height = "80%"
 
+# Herdr Annotate (Full): terminal annotations and document/reply reviews.
+[[keys.command]]
+key = "prefix+a"
+type = "plugin_action"
+command = "annotate.capture"
+description = "annotate text"
+
+[[keys.command]]
+key = "prefix+shift+a"
+type = "plugin_action"
+command = "annotate.copy-context"
+description = "copy annotations as context"
+
+[[keys.command]]
+key = "prefix+ctrl+a"
+type = "plugin_action"
+command = "annotate.copy-archive"
+description = "copy annotations as context and archive them"
+
+[[keys.command]]
+key = "prefix+ctrl+v"
+type = "plugin_action"
+command = "annotate.paste-archive"
+description = "paste annotations into the agent's prompt and archive them"
+
+[[keys.command]]
+key = "prefix+ctrl+s"
+type = "plugin_action"
+command = "annotate.send-archive"
+description = "send annotations to the agent and archive them"
+
+[[keys.command]]
+key = "prefix+m"
+type = "plugin_action"
+command = "annotate.manage"
+description = "manage annotations"
+
+[[keys.command]]
+key = "prefix+o"
+type = "plugin_action"
+command = "annotate.open"
+description = "review documents in this folder"
+
+[[keys.command]]
+key = "prefix+shift+o"
+type = "plugin_action"
+command = "annotate.last"
+description = "review the agent's last reply"
+
+[[keys.command]]
+key = "prefix+ctrl+o"
+type = "plugin_action"
+command = "annotate.last-newest"
+description = "review the agent's newest reply"
+
 # Legacy indexed shortcut config is still parsed for compatibility.
 # Prefer switch_tab, switch_workspace, and focus_agent for new configs.
 # [keys.indexed]
@@ -180,7 +235,7 @@ height = "80%"
 # Automatically copy text selected with the mouse.
 # Set false to retain drag or double-click word selection until Ctrl+C,
 # or Cmd+C when the host forwards it, copies and clears it.
-# copy_on_select = true
+copy_on_select = true
 
 # Host cursor policy: "auto", "native", or "drawn".
 # "auto" draws Herdr's own cursor on native Windows builds and WSL to avoid ConPTY cursor flicker, and uses the native terminal cursor elsewhere.
