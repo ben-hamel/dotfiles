@@ -1,6 +1,11 @@
 #Homebrew
 eval "$(/opt/homebrew/bin/brew shellenv zsh)"
 
+# Local executables (also available in non-login interactive shells)
+if [[ ":$PATH:" != *":$HOME/.local/bin:"* ]]; then
+    export PATH="$HOME/.local/bin:$PATH"
+fi
+
 #Env Var
 export XDG_CONFIG_HOME="$HOME/.config"
 
